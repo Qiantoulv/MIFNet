@@ -59,7 +59,7 @@ class LinearWithConstraint(nn.Linear):
         return super(LinearWithConstraint, self).forward(x)
 
 
-class MamBaNet(nn.Module):
+class MIFNet(nn.Module):
     def __init__(self, chans=22, out_planes=64, embded_dim=64, num_classes=4, pool_size=50, pool_stride=15,
                  radix=2):
         super().__init__()
